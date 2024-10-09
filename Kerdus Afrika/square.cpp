@@ -8,7 +8,7 @@ void drawScene(void)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glLoadIdentity();
-
+    
     glTranslatef(0.0f, 0.0f, -15.0f);
 
     glRotatef(angle, 0.0f, 1.0f, 0.0f); //rotasi
@@ -21,7 +21,7 @@ void drawScene(void)
     glVertex3f(5.0, 1.0, 3.0);
     glVertex3f(-5.0, 1.0, 3.0);
     glEnd();
-
+  
     glBegin(GL_POLYGON); // belakang
     glVertex3f(-5.0, -1.0, -3.0);
     glVertex3f(5.0, -1.0, -3.0);
@@ -131,7 +131,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
     glutInitWindowSize(500, 500);
     glutInitWindowPosition(100, 100);
-    glutCreateWindow("3D Suitcase Model with Depth Testing");
+    glutCreateWindow("3D Kardus HITAM");
     glutDisplayFunc(drawScene);
     glutReshapeFunc(resize);
     glutKeyboardFunc(keyInput);
